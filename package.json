@@ -1,24 +1,28 @@
 {
   "name": "my-agent",
-  "version": "1.0.0",
-  "description": "My Agent",
-  "main": "index.js",
-  "type": "module",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "tsx src/index.js"
+    "dev": "next dev -p 8080 -H 0.0.0.0",
+    "build": "next build",
+    "start": "next start -p 8080 -H 0.0.0.0",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
+    "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@ai-sdk/amazon-bedrock": "^2.2.12",
-    "ai": "^4.3.19",
-    "dotenv": "^17.2.0",
-    "zod": "^3.25.76"
+    "@ai-sdk/amazon-bedrock": "^0.0.20",
+    "ai": "^3.4.33",
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "@types/node": "^24.1.0",
-    "tsx": "^4.20.3",
-    "typescript": "^5.8.3"
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "prettier": "3.6.2",
+    "typescript": "^5"
   }
 }
