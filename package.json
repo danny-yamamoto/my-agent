@@ -10,9 +10,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ai-sdk/amazon-bedrock": "^0.0.20",
-    "ai": "^3.4.33",
-    "next": "14.2.5",
+    "@ai-sdk/amazon-bedrock": "^2.2.12",
+    "@aws-sdk/credential-providers": "^3.848.0",
+    "ai": "^4.3.19",
+    "next": "^14.2.30",
     "react": "^18",
     "react-dom": "^18"
   },
